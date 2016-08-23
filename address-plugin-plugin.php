@@ -8,13 +8,13 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              http://example.com
+ * @link              https://github.com/yoanmarchal/address-plugin/
  * @since             1.0.0
  *
  * @wordpress-plugin
  * Plugin Name:       address Plugin
- * Plugin URI:        http://example.com/address-plugin-uri/
- * Description:       Simple plugin for save && retrive social links
+ * Plugin URI:        https://github.com/yoanmarchal/address-plugin/
+ * Description:       Simple plugin for save && retrive address
  * Version:           1.0.0
  * Author:            Yoan marchal
  * Author URI:        http://yoanmarchal.com/
