@@ -1,0 +1,14 @@
+{
+    "name": "yoanmarchal/address_plugin",
+    "description": "Add capability to store physical address of a website",
+    "type": "wordpress-plugin",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Yoan marchal",
+            "email": "marchalyoan@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
