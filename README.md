@@ -1,11 +1,18 @@
 ## address plugin for Wordpress ##
 Contributors: @marchalyoan
+
 Donate link: https://pledgie.com/campaigns/31846
+
 Tags: address, wordpress
+
 Requires at least: 4.5.2
+
 Tested up to: 4.5.2
+
 Stable tag: 4.5.2
+
 License: GPLv2 or later
+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 ![styleCi](https://styleci.io/repos/66348625/shield) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9CYUE3CVEAJ2Q)
