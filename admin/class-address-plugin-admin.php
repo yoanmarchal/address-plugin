@@ -124,17 +124,15 @@ class address_plugin_Admin
     public function create_admin_page()
     {
         // Set class property
-            $this->options = get_option('address');
-        ?>
+            $this->options = get_option('address'); ?>
 			<div class="wrap">
 					<h2>Address settings</h2>
 					<form method="post" action="options.php">
 					<?php
             // This prints out all hidden setting fields
             settings_fields('address_settings');
-            do_settings_sections('address-plugin-admin');
-            submit_button();
-          ?>
+        do_settings_sections('address-plugin-admin');
+        submit_button(); ?>
 					</form>
 			</div>
 			<?php
@@ -302,6 +300,7 @@ class address_plugin_Admin
           isset($this->options['ship-state']) ? esc_html($this->options['ship-state']) : ''
         );
     }
+
     public function zip_callback()
     {
         printf(
@@ -309,6 +308,7 @@ class address_plugin_Admin
           isset($this->options['ship-zip']) ? esc_html($this->options['ship-zip']) : ''
         );
     }
+
     public function country_callback()
     {
         printf(
@@ -316,6 +316,7 @@ class address_plugin_Admin
           isset($this->options['ship-country']) ? esc_html($this->options['ship-country']) : ''
         );
     }
+
     public function phone_callback()
     {
         printf(
@@ -323,6 +324,7 @@ class address_plugin_Admin
           isset($this->options['phone']) ? esc_html($this->options['phone']) : ''
         );
     }
+
     public function fax_callback()
     {
         printf(
@@ -330,6 +332,7 @@ class address_plugin_Admin
           isset($this->options['fax']) ? esc_html($this->options['fax']) : ''
         );
     }
+
     public function email_callback()
     {
         printf(
@@ -337,5 +340,4 @@ class address_plugin_Admin
           isset($this->options['email']) ? esc_html($this->options['email']) : ''
         );
     }
-
 }
