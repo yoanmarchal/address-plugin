@@ -1,21 +1,14 @@
 ## Address plugin for Wordpress ##
-![styleCi](https://styleci.io/repos/66348625/shield) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9CYUE3CVEAJ2Q)
+![styleCi](https://styleci.io/repos/66348625/shield)[![Code Climate](https://codeclimate.com/github/yoanmarchal/address-plugin/badges/gpa.svg)](https://codeclimate.com/github/yoanmarchal/address-plugin) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9CYUE3CVEAJ2Q)
 
-Contributors: @marchalyoan
-
-Donate link: https://pledgie.com/campaigns/31846
-
-Tags: address, wordpress
-
-Requires at least: 4.5.2
-
-Tested up to: 4.5.2
-
-Stable tag: 4.5.2
-
-License: GPLv2 or later
-
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+  - Contributors: @marchalyoan
+  - Donate link: Donate link: https://pledgie.com/campaigns/31846
+  - Tags: address, wordpress, plugin
+  - Requires at least: 4.5.2
+  - Tested up to: 4.5.2
+  - Stable tag: 4.5.2
+  - License: GPLv2 or later
+  - License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Simple save global and retrive ship address of website
 
