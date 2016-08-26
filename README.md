@@ -1,5 +1,6 @@
 ## Address plugin for Wordpress ##
 ![styleCi](https://styleci.io/repos/66348625/shield) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9CYUE3CVEAJ2Q)
+
 Contributors: @marchalyoan
 
 Donate link: https://pledgie.com/campaigns/31846
