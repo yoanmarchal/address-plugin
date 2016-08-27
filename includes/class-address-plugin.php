@@ -114,6 +114,35 @@ class address_plugin
          */
         require_once plugin_dir_path(dirname(__FILE__)).'public/class-address-plugin-public.php';
 
+        /**
+         * The class responsible for update plugin
+         *
+         */
+        if( ! class_exists( 'Smashing_Updater' ) ){
+        	require_once plugin_dir_path(dirname(__FILE__)).'includes/class-updater.php';
+        }
+
+        /**
+         * Load Smashing_Updater class
+         *
+         */
+        $updater = new Smashing_Updater( __FILE__ );
+        $updater->set_username( 'yoanmarchal' );
+        $updater->set_repository( 'address-plugin' );
+        /*
+        $updater->authorize( 'abcdefghijk1234567890' ); // Your auth code goes here for private repos
+        */
+        /**
+         * init Smashing_Updater class with params
+         *
+         */
+        $updater->initialize();
+
+
+        register_activation_hook(__FILE__, 'activate_address_plugin');
+        register_deactivation_hook(__FILE__, 'deactivate_address_plugin');
+
+
         $this->loader = new address_plugin_Loader();
     }
 
