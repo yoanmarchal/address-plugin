@@ -31,6 +31,8 @@ Echo value
 
 
 == Changelog ==
+= 1.0.1 =
+Add auto update from last release .
 = 1.0 =
 Initial plugin.
 
