@@ -80,8 +80,13 @@ class Smashing_Updater {
 			if( $checked = $transient->checked ) { // Did Wordpress check for updates?
 
 				$this->get_repository_info(); // Get the repo info
+				// var_dump($this);
+				// die();
 
-				$out_of_date = version_compare( $this->github_response['tag_name'], $checked[ $this->basename ] ); // Check if we're out of date
+				$out_of_date = version_compare(
+					$this->github_response['tag_name'],
+					$checked[ $this->basename ]
+				); // Check if we're out of date
 
 				if( $out_of_date ) {
 
