@@ -77,7 +77,6 @@ class address_plugin_Admin
              * class.
              */
 
-            wp_enqueue_style($this->address_plugin, plugin_dir_url(__FILE__).'css/address-plugin-admin.css', [], $this->version, 'all');
         }
 
         /**
@@ -100,7 +99,6 @@ class address_plugin_Admin
              * class.
              */
 
-            wp_enqueue_script($this->address_plugin, plugin_dir_url(__FILE__).'js/address-plugin-admin.js', ['jquery'], $this->version, false);
         }
 
     /**
@@ -111,7 +109,7 @@ class address_plugin_Admin
         // This page will be under "Settings"
             add_options_page(
                     'Settings Admin',
-                    'address Settings',
+                    'Address Settings',
                     'manage_options',
                     'address-plugin-admin',
                     [$this, 'create_admin_page']
@@ -129,10 +127,10 @@ class address_plugin_Admin
 					<h2>Address settings</h2>
 					<form method="post" action="options.php">
 					<?php
-            // This prints out all hidden setting fields
-            settings_fields('address_settings');
-        do_settings_sections('address-plugin-admin');
-        submit_button(); ?>
+                        // This prints out all hidden setting fields
+                        settings_fields('address_settings');
+                        do_settings_sections('address-plugin-admin');
+                        submit_button(); ?>
 					</form>
 			</div>
 			<?php
