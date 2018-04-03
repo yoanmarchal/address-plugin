@@ -18,36 +18,36 @@
 class address_plugin_Admin
 {
     /**
-         * The ID of this plugin.
-         *
-         * @since    1.0.0
-         *
-         * @var string The ID of this plugin.
-         */
-        private $address_plugin;
+     * The ID of this plugin.
+     *
+     * @since    1.0.0
+     *
+     * @var string The ID of this plugin.
+     */
+    private $address_plugin;
 
-        /**
-         * The version of this plugin.
-         *
-         * @since    1.0.0
-         *
-         * @var string The current version of this plugin.
-         */
-        private $version;
+    /**
+     * The version of this plugin.
+     *
+     * @since    1.0.0
+     *
+     * @var string The current version of this plugin.
+     */
+    private $version;
 
-         /**
-          * Initialize the class and set its properties.
-          *
-          * @since    1.0.0
-          *
-          * @param      string    $address_plugin       The name of this plugin.
-          * @param      string    $version    The version of this plugin.
-          */
+    /**
+     * Initialize the class and set its properties.
+     *
+     * @since    1.0.0
+     *
+     * @param      string    $address_plugin       The name of this plugin.
+     * @param      string    $version    The version of this plugin.
+     */
 
-         /**
-          * Holds the values to be used in the fields callbacks.
-          */
-         private $options;
+    /**
+     * Holds the values to be used in the fields callbacks.
+     */
+    private $options;
 
     public function __construct($address_plugin, $version)
     {
@@ -57,13 +57,13 @@ class address_plugin_Admin
         add_action('admin_init', [$this, 'page_init']);
     }
 
-        /**
-         * Register the stylesheets for the admin area.
-         *
-         * @since    1.0.0
-         */
-        public function enqueue_styles()
-        {
+    /**
+     * Register the stylesheets for the admin area.
+     *
+     * @since    1.0.0
+     */
+    public function enqueue_styles()
+    {
 
             /*
              * This function is provided for demonstration purposes only.
@@ -76,16 +76,15 @@ class address_plugin_Admin
              * between the defined hooks and the functions defined in this
              * class.
              */
+    }
 
-        }
-
-        /**
-         * Register the JavaScript for the admin area.
-         *
-         * @since    1.0.0
-         */
-        public function enqueue_scripts()
-        {
+    /**
+     * Register the JavaScript for the admin area.
+     *
+     * @since    1.0.0
+     */
+    public function enqueue_scripts()
+    {
 
             /*
              * This function is provided for demonstration purposes only.
@@ -98,8 +97,7 @@ class address_plugin_Admin
              * between the defined hooks and the functions defined in this
              * class.
              */
-
-        }
+    }
 
     /**
      * Add options page.
@@ -107,7 +105,7 @@ class address_plugin_Admin
     public function add_plugin_page()
     {
         // This page will be under "Settings"
-            add_options_page(
+        add_options_page(
                     'Settings Admin',
                     'Address Settings',
                     'manage_options',
@@ -129,12 +127,11 @@ class address_plugin_Admin
 					<?php
                         // This prints out all hidden setting fields
                         settings_fields('address_settings');
-                        do_settings_sections('address-plugin-admin');
-                        submit_button(); ?>
+        do_settings_sections('address-plugin-admin');
+        submit_button(); ?>
 					</form>
 			</div>
 			<?php
-
     }
 
     // Facebook, YouTube, Twitter, Instagram, Tumblr, Google+,  Skype, Reddit, Soundcloud, Pinterest
@@ -220,7 +217,6 @@ class address_plugin_Admin
           'address-plugin-admin', // Page
           'setting_section_address' // Section
         );
-
 
         /*
         rue codepostal ville tel fax email
