@@ -27,7 +27,13 @@ For get address
 
 Echo value
 `<?= $address['ship-address'];?>`
-
+`<?= $address['ship-city'];?>`
+`<?= $address['ship-state'];?>`
+`<?= $address['ship-zip'];?>`
+`<?= $address['ship-country'];?>`
+`<?= $address['phone'];?>`
+`<?= $address['fax'];?>`
+`<?= $address['email'];?>`
 
 == Changelog ==
 = 1.0.1 =
